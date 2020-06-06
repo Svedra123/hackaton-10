@@ -1,0 +1,6 @@
+Como defines una funcion?
+Una función es un procedimiento en JavaScript—un conjunto de sentencias que realizan una tarea o calculan un valor. 
+Para usar una función, debe definirla en algún lugar del ámbito desde el cual desea llamarla.
+
+Hasta cuantos argumentos puedes declarar en una funcion?
+Se puede declarar argumentos indefinidos, se usa el parametro ...rest
