@@ -1,5 +1,22 @@
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present',1];
-
-const result = words.filter(word => word.toString );
-
-console.log(result);
+var arr = [
+    { id: 1 },
+    { id: 2 },
+    { id: 3 },
+    { id: "x" },
+    { id: "y"},
+    { id: 10 }
+  ];
+  
+  var entradasInvalidas = 0;
+  function filtrarPorID(obj) {
+    if ('id' in obj && typeof(obj.id) === "string" && !isNaN(obj.id)) {
+      return true;
+    } else {
+      entradasInvalidas++;
+      return false;
+    }
+  }
+  
+  var arrPorID = arr.filter(filtrarPorID);
+  
+  console.log('Array Filtrado\n', arrPorID);
